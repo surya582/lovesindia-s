@@ -12,7 +12,7 @@ inputBox.onkeyup = (e)=>{
     let emptyArray = [];
     if(userData){
         icon.onclick = ()=>{
-            webLink = "http://lovesindia.ml/?s=" + userData;
+            webLink = "http://search.lovesindia.ml/" + userData;
             linkTag.setAttribute("href", webLink);
             console.log(webLink);
             linkTag.click();
@@ -41,7 +41,7 @@ function select(element){
     let selectData = element.textContent;
     inputBox.value = selectData;
     icon.onclick = ()=>{
-        webLink = "http://lovesindia.ml/?s=" + selectData;
+        webLink = "http://search.lovesindia.ml/" + selectData;
         linkTag.setAttribute("href", webLink);
         linkTag.click();
     }
